@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Nikolaenko</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-logo">AN</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1 class="hero-name">Alex Nikolaenko</h1>
+      <p class="hero-quote">"If you are the smartest person in the room, you're in the wrong room"</p>
+    </div>
+  </section>
+
+  <main>
+
+    <section id="about" class="section">
+      <h2 class="section-title">About</h2>
+      <div class="about-content">
+        <p>Hello, my name is Alex, formally I'm a mathematician, though what I actually study is how things work — the degree just makes it official. That instinct tends to lead to the same place regardless of the field: if something needs ten steps to explain, it's not that the problem is hard — someone's missed the elegant version.</p>
+        <p>Currently wrapping up a dual BSc in Mathematics &amp; Economics — HSE Moscow and the University of London — before heading to LSE for an MSc in Financial Mathematics in September 2026.</p>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">2026 →</div>
+          <div class="timeline-body">
+            <h3>MSc Financial Mathematics</h3>
+            <p class="timeline-place">London School of Economics</p>
+            <p class="timeline-desc">Starting September 2026.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">2022 – 2026</div>
+          <div class="timeline-body">
+            <h3>BSc Mathematics &amp; Economics <span class="badge">Dual Degree</span></h3>
+            <p class="timeline-place">HSE Moscow · University of London International Programme</p>
+            <p class="timeline-desc">Percentile: 0.6%, GPA: 9.24</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">2015 – 2022</div>
+          <div class="timeline-body">
+            <h3>Secondary School</h3>
+            <p class="timeline-place">Moscow School No. 57 · Mathematics and Economics class</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Feb – Apr 2026</div>
+          <div class="timeline-body">
+            <h3>Junior Business Analyst</h3>
+            <p class="timeline-place">T-Bank</p>
+            <p class="timeline-desc">Master system architecture and project management; cointegration of stakeholders and developers.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">2025 – 2026</div>
+          <div class="timeline-body">
+            <h3>Student Mentor &amp; Tutor</h3>
+            <p class="timeline-place">HSE Moscow</p>
+            <p class="timeline-desc">Onboarding and year-round support for incoming first-years; voluntary Macroeconomics II tutoring sessions for peers.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+
+        <div class="project-card reveal">
+          <h3>CS:GO / CS2 Skin Price Analysis</h3>
+          <p>Modelled log-price dynamics of in-game cosmetics using ARMA–GARCH. Identified volatility clustering, fat tails, and seasonality; applied Zivot–Andrews structural-break detection and Engle–Granger cointegration to find co-moving skin pairs. Demonstrated statistical parallels with traditional financial assets.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Time Series</span>
+            <span>ARMA-GARCH</span>
+            <span>Cointegration</span>
+          </div>
+          <a href="https://github.com/Legard525" target="_blank" class="project-link">GitHub →</a>
+        </div>
+
+        <div class="project-card reveal">
+          <h3>MOEX G-Curve Modelling</h3>
+          <p>Calibrated Vasicek, Cox–Ingersoll–Ross, and Hull–White short-rate models to Russian government bond data via maximum likelihood. Fitted return distribution tails with Generalised Pareto Distribution and assessed goodness-of-fit through empirical vs. theoretical quantile coverage.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>EVT / GPD</span>
+            <span>Short-rate Models</span>
+            <span>MLE</span>
+          </div>
+          <a href="https://github.com/Legard525" target="_blank" class="project-link">GitHub →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <h3>Programming</h3>
+          <p>Python · R · SQL · LaTeX</p>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3>Tools</h3>
+          <p>Git · Pandas · NumPy · SciPy · PyTorch · Docker</p>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3>AI &amp; Agents</h3>
+          <p>Claude Code · Claude API · MCP servers · Prompt engineering · Tool use · Multi-agent orchestration · Agentic workflows</p>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3>Languages</h3>
+          <p>Russian — native<br>English — fluent</p>
+        </div>
+
+        <div class="skill-group skill-wide reveal">
+          <h3>Quant &amp; Finance</h3>
+          <p>Stochastic calculus · Time series · Linear algebra · Abstract mathematics · Risk modelling</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="interests" class="section">
+      <h2 class="section-title">Interests</h2>
+      <div class="interests-content reveal">
+        <p>Fantasy literature · Esports · Table tennis · Guitar · Teaching · Animated movies</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-content reveal">
+        <p>Best reached by email. Not big on forms.</p>
+        <a href="mailto:al.nikolaenko@outlook.com" class="contact-email">al.nikolaenko@outlook.com</a>
+        <div class="contact-links">
+          <a href="https://github.com/Legard525" target="_blank">GitHub</a>
+          <a href="https://t.me/Legard_l" target="_blank">Telegram</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>built with curiosity · no cookies · no tracking</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
