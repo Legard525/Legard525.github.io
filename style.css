@@ -79,6 +79,24 @@ nav {
   color: var(--accent);
 }
 
+.nav-cv {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid rgba(232, 184, 109, 0.35);
+  padding: 0.45em 0.95em;
+  border-radius: 4px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.nav-cv:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+}
+
 /* ─── HERO ─── */
 
 #hero {
@@ -100,15 +118,6 @@ nav {
   font-weight: 700;
   line-height: 1.04;
   letter-spacing: -0.025em;
-  margin-bottom: 1.2rem;
-}
-
-.hero-quote {
-  font-size: 1rem;
-  color: var(--text-muted);
-  font-style: italic;
-  letter-spacing: 0.01em;
-  white-space: nowrap;
 }
 
 /* ─── SECTIONS ─── */
@@ -265,6 +274,14 @@ nav {
 
 .project-link:hover {
   opacity: 0.65;
+}
+
+.project-note {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  align-self: flex-end;
 }
 
 /* ─── SKILLS ─── */

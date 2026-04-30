@@ -1,0 +1,113 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=1.6cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\usepackage{parskip}
+
+\definecolor{accent}{HTML}{B07A2E}
+\definecolor{muted}{HTML}{555555}
+\definecolor{ink}{HTML}{1A1A1A}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=accent,
+    linkcolor=accent
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}
+  {\normalfont\fontsize{9}{11}\bfseries\color{accent}\MakeUppercase}
+  {}{0em}{}[\vspace{-2pt}\hrule height 0.4pt\vspace{4pt}]
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+
+\newcommand{\role}[3]{%
+  \textbf{#1} \hfill \textcolor{muted}{\small #3}\\%
+  \textcolor{muted}{\small #2}%
+}
+
+\newcommand{\edublock}[4]{%
+  \textbf{#1} \hfill \textcolor{muted}{\small #3}\\%
+  \textcolor{muted}{\small #2}%
+  \ifx&#4&\else\\\textcolor{muted}{\small #4}\fi%
+}
+
+\color{ink}
+
+\begin{document}
+
+\begin{center}
+{\fontsize{22}{26}\selectfont\bfseries Alex Nikolaenko}\\[4pt]
+\textcolor{muted}{\small
+  \href{mailto:al.nikolaenko@outlook.com}{al.nikolaenko@outlook.com}
+  \quad\textbar\quad
+  \href{https://github.com/Legard525}{github.com/Legard525}
+  \quad\textbar\quad
+  \href{https://t.me/Legard_l}{t.me/Legard\_l}
+  \quad\textbar\quad
+  \href{https://legard525.github.io}{legard525.github.io}
+}
+\end{center}
+
+\vspace{2pt}
+
+\section{Profile}
+Mathematician by training, builder by instinct. Dual BSc in Mathematics and Economics (HSE Moscow $\cdot$ University of London International Programme), heading to LSE for an MSc in Financial Mathematics in September 2026. Comfortable across stochastic calculus, time-series econometrics, and the engineering side of quantitative work --- from short-rate calibration to building agentic LLM workflows.
+
+\section{Education}
+
+\edublock{MSc Financial Mathematics}{London School of Economics and Political Science}{Sep 2026 --- }{}
+
+\vspace{4pt}
+
+\edublock{BSc Mathematics \& Economics \textit{(Dual Degree)}}{HSE Moscow $\cdot$ University of London International Programme}{2022 --- 2026}{GPA 9.24/10 $\cdot$ top 0.6\% of cohort}
+
+\vspace{4pt}
+
+\edublock{Secondary School}{Moscow School No.~57 --- Mathematics and Economics class}{2015 --- 2022}{}
+
+\section{Experience}
+
+\role{Junior Business Analyst}{T-Bank}{Feb --- Apr 2026}
+\begin{itemize}[leftmargin=*,topsep=2pt,itemsep=1pt]
+  \item Translated business requirements into engineering specifications; coordinated between product stakeholders and development teams.
+  \item Built practical foundation in system architecture and project management within a large-bank tech environment.
+\end{itemize}
+
+\role{Student Mentor \& Tutor}{HSE Moscow}{2025 --- 2026}
+\begin{itemize}[leftmargin=*,topsep=2pt,itemsep=1pt]
+  \item Onboarding and year-round support for incoming first-year students.
+  \item Voluntary Macroeconomics~II tutoring sessions for peers.
+\end{itemize}
+
+\section{Selected Projects}
+
+\textbf{CS:GO / CS2 Skin Price Analysis} \hfill \textcolor{muted}{\small Python $\cdot$ ARMA--GARCH $\cdot$ Cointegration}\\
+Modelled log-price dynamics of in-game cosmetics; identified volatility clustering, fat tails, and seasonality. Applied Zivot--Andrews structural-break detection and Engle--Granger cointegration to find co-moving skin pairs --- demonstrating statistical parallels with traditional financial assets.
+
+\vspace{4pt}
+
+\textbf{MOEX G-Curve Modelling} \hfill \textcolor{muted}{\small Python $\cdot$ Short-rate Models $\cdot$ EVT/GPD $\cdot$ MLE}\\
+Calibrated Vasicek, Cox--Ingersoll--Ross, and Hull--White short-rate models to Russian government bond data via maximum likelihood. Fitted return-distribution tails with the Generalised Pareto Distribution; assessed goodness-of-fit through empirical-vs-theoretical quantile coverage.
+
+\section{Skills}
+
+\textbf{Programming} \quad Python $\cdot$ R $\cdot$ SQL $\cdot$ \LaTeX\\
+\textbf{Tools} \quad Git $\cdot$ Pandas $\cdot$ NumPy $\cdot$ SciPy $\cdot$ PyTorch $\cdot$ Docker\\
+\textbf{Quant \& Finance} \quad Stochastic calculus $\cdot$ Time series $\cdot$ Linear algebra $\cdot$ Risk modelling\\
+\textbf{AI \& Agents} \quad Claude Code $\cdot$ Anthropic SDK $\cdot$ MCP server integration $\cdot$ Multi-agent orchestration
+
+\section{Languages}
+
+Russian --- native \quad\textbar\quad\ English --- fluent
+
+\end{document}
