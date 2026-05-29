@@ -52,14 +52,6 @@ nav {
   align-items: center;
 }
 
-.nav-logo {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  color: var(--accent);
-  letter-spacing: 0.08em;
-}
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -195,19 +187,6 @@ nav {
 .timeline-desc {
   color: var(--text-secondary);
   font-size: 0.9rem;
-}
-
-.badge {
-  font-size: 0.62rem;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  background: var(--accent-dim);
-  color: var(--accent);
-  border: 1px solid rgba(232, 184, 109, 0.25);
-  padding: 0.15em 0.55em;
-  border-radius: 3px;
 }
 
 /* ─── PROJECTS ─── */
