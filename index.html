@@ -4,20 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Nikolaenko</title>
-  <meta name="description" content="Alex Nikolaenko — Mathematics & Economics dual BSc (HSE Moscow / University of London), heading to London for an MSc in Financial Mathematics in 2026. Quantitative finance, time series, risk modelling.">
+  <meta name="description" content="Alex Nikolaenko, MSc Financial Mathematics student at LSE. First Class BSc Mathematics and Economics (University of London) and Bachelor of Economics (HSE Moscow). Quantitative research, volatility modelling, machine learning.">
   <meta name="author" content="Alex Nikolaenko">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://legard525.github.io/">
   <meta property="og:title" content="Alex Nikolaenko">
-  <meta property="og:description" content="Mathematics & Economics — HSE Moscow / University of London. MSc Financial Mathematics in London, 2026.">
+  <meta property="og:description" content="MSc Financial Mathematics at LSE. First Class BSc Mathematics and Economics (University of London), Bachelor of Economics (HSE Moscow).">
   <meta property="og:image" content="https://legard525.github.io/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Alex Nikolaenko">
-  <meta name="twitter:description" content="Mathematics & Economics — HSE Moscow / University of London. MSc Financial Mathematics in London, 2026.">
+  <meta name="twitter:description" content="MSc Financial Mathematics at LSE. First Class BSc Mathematics and Economics (University of London), Bachelor of Economics (HSE Moscow).">
   <meta name="twitter:image" content="https://legard525.github.io/og.png">
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -34,6 +34,7 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -64,11 +65,28 @@
       <div class="timeline">
 
         <div class="timeline-item reveal">
+          <div class="timeline-date">2026 – 2027</div>
+          <div class="timeline-body">
+            <h3>MSc Financial Mathematics</h3>
+            <p class="timeline-place">London School of Economics and Political Science (LSE)</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">2023 – 2026</div>
+          <div class="timeline-body">
+            <h3>BSc Mathematics and Economics, First Class Honours</h3>
+            <p class="timeline-place">University of London · academic direction by LSE</p>
+            <p class="timeline-desc">Commendations 2023/24 and 2024/25 · Algebra 96/100, top in the international cohort · Optimisation 91/100</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
           <div class="timeline-date">2022 – 2026</div>
           <div class="timeline-body">
-            <h3>BSc Mathematics &amp; Economics, Dual Degree</h3>
-            <p class="timeline-place">HSE Moscow · University of London International Programme</p>
-            <p class="timeline-desc">Percentile: 0.6%, GPA: 9.24</p>
+            <h3>Bachelor of Economics, Mathematics and Economics major</h3>
+            <p class="timeline-place">HSE University · International College of Economics and Finance (ICEF), Moscow</p>
+            <p class="timeline-desc">GPA 9.11/10, top 0.6% of cohort · 10/10 in Abstract Mathematics, Econometrics, Optimisation Theory, Time Series and Panel Data Analysis, Mathematics of Finance and Valuation</p>
           </div>
         </div>
 
@@ -83,6 +101,37 @@
       </div>
     </section>
 
+    <section id="research" class="section">
+      <h2 class="section-title">Research</h2>
+      <div class="project-grid">
+
+        <div class="project-card reveal">
+          <h3>The GARCH-M Model with an Extreme-Downside Risk Premium</h3>
+          <p>With I. S. Slabolitskiy (HSE). An asymmetric GARCH-M model in which expected returns price ordinary and extreme negative shocks separately, with a closed-form unconditional variance. The extreme-shock threshold is estimated by chaining GEV and GPD fits on filtered residuals, which cuts threshold RMSE by up to a quarter in Monte Carlo. On S&amp;P 500 returns, downside risk is strongly priced.</p>
+          <div class="project-tags">
+            <span>GARCH-M</span>
+            <span>Extreme Value Theory</span>
+            <span>Monte Carlo</span>
+            <span>Econometrics</span>
+          </div>
+          <span class="project-note">Under review at Economics Letters</span>
+        </div>
+
+        <div class="project-card reveal">
+          <h3>BSc Thesis: Neural Networks vs Traditional Calibration of the SABR Model</h3>
+          <p>A Sobolev-loss neural surrogate of the Hagan formula (Tanh, ELU, GELU, SIREN) compared with classical calibration on GLD options. The surrogate matched or slightly beat the classical fit with a better-conditioned Jacobian, and a neural warm start cut iterations in the Feb–Mar 2026 high-volatility window.</p>
+          <div class="project-tags">
+            <span>PyTorch</span>
+            <span>SABR</span>
+            <span>Sobolev Training</span>
+            <span>Options</span>
+          </div>
+          <span class="project-note">HSE Moscow · grade 9/10</span>
+        </div>
+
+      </div>
+    </section>
+
     <section id="experience" class="section">
       <h2 class="section-title">Experience</h2>
       <div class="timeline">
@@ -90,9 +139,9 @@
         <div class="timeline-item reveal">
           <div class="timeline-date">Feb – Apr 2026</div>
           <div class="timeline-body">
-            <h3>Junior Business Analyst</h3>
-            <p class="timeline-place">T-Bank</p>
-            <p class="timeline-desc">Translating business requirements into engineering specs and aligning stakeholders with development teams; building practical foundation in system architecture and project management.</p>
+            <h3>Junior Business Analyst, B2B Lending Products</h3>
+            <p class="timeline-place">T-Bank, Moscow</p>
+            <p class="timeline-desc">Designed the architecture of a B2B buy-now-pay-later lending system: gathered requirements from stakeholders, set and assigned development tasks, and kept the legal team updated on changes. Specified its accounting logic (commissions, accruals, payments), tariff system and MVP pricing, and its integrations with 1C and document-management platforms.</p>
           </div>
         </div>
 
@@ -167,7 +216,7 @@
 
         <div class="skill-group reveal">
           <h3>AI &amp; Agents</h3>
-          <p>Claude Code · Anthropic SDK · MCP servers · Multi-agent orchestration</p>
+          <p>Claude Code · Agent-searchable Obsidian knowledge base with a custom retrieval skill</p>
         </div>
 
         <div class="skill-group reveal">
@@ -176,8 +225,8 @@
         </div>
 
         <div class="skill-group skill-wide reveal">
-          <h3>Quant &amp; Finance</h3>
-          <p>Stochastic calculus · Time series · Linear algebra · Abstract mathematics · Risk modelling</p>
+          <h3>Quant &amp; ML</h3>
+          <p>Stochastic calculus · Volatility models · Extreme value theory · Deep learning · Optimisation</p>
         </div>
 
       </div>

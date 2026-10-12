@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 
-\usepackage[margin=1.6cm]{geometry}
+\usepackage[margin=1.3cm,top=1.1cm,bottom=1.1cm]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
@@ -24,11 +24,14 @@
 
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+% parskip otherwise adds a full blank line between bullets
+\setlist[itemize]{leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt,partopsep=0pt}
 
 \titleformat{\section}
   {\normalfont\fontsize{9}{11}\bfseries\color{accent}\MakeUppercase}
   {}{0em}{}[\vspace{-2pt}\hrule height 0.4pt\vspace{4pt}]
-\titlespacing*{\section}{0pt}{10pt}{4pt}
+\titlespacing*{\section}{0pt}{6pt}{3pt}
 
 \newcommand{\role}[3]{%
   \textbf{#1} \hfill \textcolor{muted}{\small #3}\\%
@@ -58,52 +61,72 @@
 }
 \end{center}
 
-\vspace{2pt}
-
-\section{Profile}
-Dual BSc in Mathematics and Economics (HSE Moscow $\cdot$ University of London International Programme), heading to London for an MSc in Financial Mathematics in 2026. Comfortable across stochastic calculus, time-series econometrics, and the engineering side of quantitative work --- from short-rate calibration to building agentic LLM workflows.
-
 \section{Education}
 
-\edublock{BSc Mathematics \& Economics \textit{(Dual Degree)}}{HSE Moscow $\cdot$ University of London International Programme}{2022 --- 2026}{GPA 9.24/10 $\cdot$ top 0.6\% of cohort}
+\edublock{MSc Financial Mathematics}{London School of Economics and Political Science (LSE)}{Sep 2026 --- Jun 2027}{}
 
 \vspace{4pt}
 
-\edublock{Secondary School}{Moscow School No.~57 --- Mathematics and Economics class}{2015 --- 2022}{}
+\edublock{BSc Mathematics and Economics, First Class Honours}{University of London, academic direction by LSE}{2023 --- 2026}{Commendations 2023/24, 2024/25 $\cdot$ Algebra 96/100, top in the international cohort $\cdot$ Optimisation 91/100}
+
+\vspace{4pt}
+
+\edublock{Bachelor of Economics, Mathematics and Economics major}{HSE University, International College of Economics and Finance (ICEF), Moscow}{2022 --- 2026}{GPA 9.11/10, top 0.6\% of cohort $\cdot$ 10/10 in Abstract Mathematics, Econometrics, Optimisation Theory, Time Series and Panel Data Analysis, Mathematics of Finance and Valuation}
+
+\vspace{4pt}
+
+\textbf{Moscow School No.~57} \textcolor{muted}{\small Mathematics and Economics class} \hfill \textcolor{muted}{\small 2015 --- 2022}
+
+\section{Research}
+
+\textbf{The GARCH-M Model with an Extreme-Downside Risk Premium} \hfill \textcolor{muted}{\small 2026}\\
+\textcolor{muted}{\small with I.~S.~Slabolitskiy (HSE) $\cdot$ under review at \textit{Economics Letters}}
+\begin{itemize}
+  \item Proposed an asymmetric GARCH-M model in which expected returns price ordinary and extreme negative shocks separately, with a closed-form unconditional variance.
+  \item Estimated the extreme-shock threshold by chaining GEV and GPD fits on filtered residuals, cutting threshold RMSE by up to a quarter in Monte Carlo. On S\&P~500 returns, downside risk is strongly priced.
+\end{itemize}
+
+\vspace{2pt}
+
+\textbf{BSc Thesis: Neural Networks vs Traditional Calibration of the SABR Model} \hfill \textcolor{muted}{\small 2026}\\
+\textcolor{muted}{\small HSE Moscow $\cdot$ grade 9/10}
+\begin{itemize}
+  \item Trained a Sobolev-loss neural surrogate of the Hagan formula (Tanh, ELU, GELU, SIREN) and compared it with classical calibration on GLD options.
+  \item The surrogate matched or slightly beat the classical fit with a better-conditioned Jacobian, and a neural warm start cut iterations in the Feb--Mar 2026 high-volatility window.
+\end{itemize}
 
 \section{Experience}
 
-\role{Junior Business Analyst}{T-Bank}{Feb --- Apr 2026}
-\begin{itemize}[leftmargin=*,topsep=2pt,itemsep=1pt]
-  \item Translated business requirements into engineering specifications; coordinated between product stakeholders and development teams.
-  \item Built practical foundation in system architecture and project management within a large-bank tech environment.
-\end{itemize}
-
-\role{Student Mentor \& Tutor}{HSE Moscow}{2025 --- 2026}
-\begin{itemize}[leftmargin=*,topsep=2pt,itemsep=1pt]
-  \item Onboarding and year-round support for incoming first-year students.
-  \item Voluntary Macroeconomics~II tutoring sessions for peers.
+\role{Junior Business Analyst, B2B Lending Products}{T-Bank, Moscow}{Feb --- Apr 2026}
+\begin{itemize}
+  \item Designed the architecture of a B2B buy-now-pay-later lending system: gathered requirements from stakeholders, set and assigned development tasks, and kept the legal team updated on changes.
+  \item Specified its accounting logic (commissions, accruals, payments), tariff system and MVP pricing, and its integrations with 1C and document-management platforms.
 \end{itemize}
 
 \section{Selected Projects}
 
 \textbf{CS:GO / CS2 Skin Price Analysis} \hfill \textcolor{muted}{\small Python $\cdot$ ARMA--GARCH $\cdot$ Cointegration}\\
-Modelled log-price dynamics of in-game cosmetics; identified volatility clustering, fat tails, and seasonality. Applied Zivot--Andrews structural-break detection and Engle--Granger cointegration to find co-moving skin pairs --- demonstrating statistical parallels with traditional financial assets.
+Volatility clustering, structural breaks and cointegration of co-moving pairs in in-game asset prices.
 
 \vspace{4pt}
 
 \textbf{MOEX G-Curve Modelling} \hfill \textcolor{muted}{\small Python $\cdot$ Short-rate Models $\cdot$ EVT/GPD $\cdot$ MLE}\\
-Calibrated Vasicek, Cox--Ingersoll--Ross, and Hull--White short-rate models to Russian government bond data via maximum likelihood. Fitted return-distribution tails with the Generalised Pareto Distribution; assessed goodness-of-fit through empirical-vs-theoretical quantile coverage.
+Vasicek, CIR and Hull--White calibrated to Russian government bonds by MLE, with GPD tail fits.
+
+\section{Awards \& Activities}
+
+\begin{itemize}
+  \item 2nd-degree diploma in Economics, ``I Am a Professional'' national student olympiad (2025).
+  \item Two merit scholarships for the top 10 of the HSE cohort, incl.\ the ICEF Academia award (1 of 5 winners).
+  \item Participant in A.~N.~Shiryaev's Financial Mathematics seminar, Moscow State University.
+  \item Student mentor for first-years and voluntary Macroeconomics~II tutor, HSE Moscow (2025--2026).
+\end{itemize}
 
 \section{Skills}
 
-\textbf{Programming} \quad Python $\cdot$ R $\cdot$ SQL $\cdot$ \LaTeX\\
-\textbf{Tools} \quad Git $\cdot$ Pandas $\cdot$ NumPy $\cdot$ SciPy $\cdot$ PyTorch $\cdot$ Docker\\
-\textbf{Quant \& Finance} \quad Stochastic calculus $\cdot$ Time series $\cdot$ Linear algebra $\cdot$ Risk modelling\\
-\textbf{AI \& Agents} \quad Claude Code $\cdot$ Anthropic SDK $\cdot$ MCP server integration $\cdot$ Multi-agent orchestration
-
-\section{Languages}
-
-Russian --- native \quad\textbar\quad\ English --- fluent
+\textbf{Programming} \quad Python (NumPy, Pandas, SciPy, PyTorch) $\cdot$ R $\cdot$ SQL $\cdot$ \LaTeX\ $\cdot$ Git $\cdot$ Docker\\
+\textbf{Quant \& ML} \quad Stochastic calculus $\cdot$ Volatility models $\cdot$ Extreme value theory $\cdot$ Deep learning $\cdot$ Optimisation\\
+\textbf{AI \& Agents} \quad Claude Code $\cdot$ Agent-searchable Obsidian knowledge base with a custom retrieval skill\\
+\textbf{Languages} \quad Russian (native) $\cdot$ English (fluent)
 
 \end{document}
